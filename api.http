@@ -1,0 +1,34 @@
+POST http://localhost:3333/events
+Content-Type: application/json
+
+{
+  "title": 1223,
+  "details": null,
+  "maximumAttendees": 1
+}
+
+###
+
+POST http://localhost:3333/events/a91ecfd2-ff9b-43a0-b432-e61d786d97e2/attendees
+Content-Type: application/json
+
+{
+  "name": "Jailson Silva",
+  "email": "jailsonh2@gmail.com"
+}
+
+###
+
+GET http://localhost:3333/events/a91ecfd2-ff9b-43a0-b432-e61d786d97e2
+
+###
+
+GET http://localhost:3333/attendees/a02t/badge
+
+###
+
+GET http://localhost:3333/attendees/a02t/check-in
+
+###
+
+GET http://localhost:3333/events/a91ecfd2-ff9b-43a0-b432-e61d786d97e2/attendees?query=jailson
